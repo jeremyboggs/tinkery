@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+html,body {
+    margin:0;
+    padding:0;
+}
+
+header {
+    background: #333;
+    color: white;
+}
+
+header h1 {
+    margin:0;
+    padding:1rem;
+}
+
+nav {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+a {
+    display:flex;
+    width: 50%;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background: #88cc33;
+    padding: 2rem;
+}
+a + a {
+    background: #3388cc;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-in; /* Adjust duration as needed */
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 1s ease-out; /* Adjust duration as needed */
+}
